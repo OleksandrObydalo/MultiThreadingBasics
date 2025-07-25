@@ -2,6 +2,7 @@ public class PauseExample {
     public static void main(String[] args) throws InterruptedException {
         Thread t = new Thread(() -> {
             try {
+                System.out.println("Потік почався");
                 Thread.sleep(1000); // 1 секунда
                 System.out.println("Потік після сну");
             } catch (InterruptedException e) {
